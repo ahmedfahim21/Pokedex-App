@@ -21,7 +21,7 @@ const colors = {
     steel:'#B8CAE0'
 };
 
-
+//function for creating each pokemon card including all its information
 async function createPokemonCard(pokemon){
     const pokemonEl = document.createElement('div');
     pokemonEl.classList.add('pokemon');
@@ -35,7 +35,7 @@ async function createPokemonCard(pokemon){
         var sec_type="None";
     }
     
-
+    //making the front side of card
     const pokeInnerHTML =
     `<div class="img_cont">
     <img class="img_container" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" alt="${pokemon.name} image">
@@ -71,7 +71,7 @@ async function createPokemonCard(pokemon){
         var pokemon_sp_fvt="NO DATA AVAILABLE";
     }
 
-
+    //  making the back side of card
     const pokeInnerHTML2 =
     `<div class="stats"> STATS:
         <p>${pokemon.stats[0].stat.name}:<div class="bar"></div>
@@ -136,11 +136,10 @@ async function createPokemonCard(pokemon){
     </div>
     `;
 
-
+    //event listeners to toggle front and back side
     pokemonEl.addEventListener('mouseenter', ()=>{
         pokemonEl.style.backgroundColor=color;
         pokemonEl.innerHTML=pokeInnerHTML2;
-        // pokemonEl.style.borderColor=colors[sec_type];
     })
     pokemonEl.addEventListener('mouseleave', ()=>{
         pokemonEl.style.backgroundColor="rgba(255, 255, 255, .5)";
@@ -153,7 +152,7 @@ async function createPokemonCard(pokemon){
 }
 
 
-
+//function to fetch pokemons based on type filtering
 var pok_types=document.getElementById('pok_types');
 pok_types.addEventListener('click', async function(){
     poke_container[0].innerHTML="";
@@ -167,7 +166,7 @@ pok_types.addEventListener('click', async function(){
 
 });
 
-
+//function to fetch ALL pokemons
 const fetchallPokemons =async()=>{
     const qurl='https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0';
     const res = await fetch(qurl);
@@ -178,6 +177,7 @@ const fetchallPokemons =async()=>{
     }
 }
 
+//function to fetch url of individual pokemons 
 const getPokemonType = async (type_id) =>{
 
     const url= 'https://pokeapi.co/api/v2/type/'+type_id;
@@ -191,6 +191,7 @@ const getPokemonType = async (type_id) =>{
     }
 }
 
+//function to fetch data of individual pokemons
 const getPokemons = async (url) =>{
     
     const res = await fetch(url);
