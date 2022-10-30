@@ -128,7 +128,6 @@ async function createPokemonCard(pokemon){
         height: 5px;
         background: pink;
         z-index:1"></div></p>
-        <br>
         DESCRIPTION:
         <p class="info">
         ${pokemon_sp_fvt}

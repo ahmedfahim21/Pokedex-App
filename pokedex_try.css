@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 body {
 	
@@ -13,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    overflow-x:hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,35 +24,94 @@ body {
 	margin: 0;
 }
 
-.header{
-    background-color:#e42535;
-    width: 100%;
-    min-width: -webkit-fill-available;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    z-index: 1;
+
+
+.navbar img{
+  width: 70px;
 }
 
-.header img{
-    position: relative;
-    margin-top: 2px;
-    height: 70px;
-    top: 68px;
-    padding-top: 7px ;
-    padding-left: 90px;
+
+
+.poke_page img{
+    margin-top: 100px;
+    /* padding-right: 20px; */
+    width: 900px;
 }
 
-.header h1 {
-	letter-spacing: 3px;
-    color: #f7f7ff;
-    padding-left: 200px;
-    margin-top: 5px;
+.poke_page h1{
+  margin-top: 150px;
+  /* padding-left: 100px; */
+  font-size: 90px;
 }
+
+
+.shine{
+  background: -webkit-linear-gradient(-91deg, rgb(243, 10, 10) 5%, rgb(161, 76, 76) 53%, rgb(104, 7, 7) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.poke_page p{
+  font-size: 25px;
+  /* padding-left: 100px; */
+  padding-top: 50px;
+}
+
+.poke_page .a_div{
+  /* padding-left: 100px; */
+  padding-top: 40px;
+}
+
+
+.features_page .feat{
+  
+  margin-top: 200px;
+  /* padding-left: 200px; */
+  
+}
+
+.features_page h1{
+  font-size: 60px;
+}
+
+.features_page .div_features{
+  
+  margin-top: 50px;
+}
+
+.features_page .div_features .div_feature{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.features_page .div_features .div_feature h3{
+  padding-top: 20px;
+  margin-left: 15px;
+  font-size: 25px;
+
+}
+
+.features_page .div_features .div_feature p{
+  padding-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 200;
+
+}
+
+.features_page .div_features .div_feature:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  
+}
+
+
+
 
 .type_container {
-    position: absolute;
+    position: relative;
     align-content: space-between;
     justify-content: center;
     display: flex;
@@ -104,7 +166,7 @@ body {
 
 
   .poke_container{
-    position: absolute;
+    position: relative;
     top: 400px;
     padding: 30px;
     border-radius: 20px;
@@ -127,15 +189,15 @@ body {
 	margin: 10px;
 	padding: 20px;
 	text-align: center;
-    width: 260px;
-    height: 330px;
+    width: 280px;
+    height: 380px;
 }
 
 .pokemon .img_container {
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	text-align: center;
 }
 
@@ -157,13 +219,14 @@ body {
 
 .pokemon .name {
 	margin: 15px 0 7px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
+  font-size: 20px;
 }
 
 .pokemon .stats p{
   align-self: flex-start;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .pokemon .stats .bar{
@@ -186,11 +249,16 @@ body {
 }
 .pokemon .info .type1{
   position: relative;
-  top: 11px
+  
 }
 
 .pokemon .info .type2{
     position: relative;
-    top: 16px
 }
 
+.footer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: -500px;
+}

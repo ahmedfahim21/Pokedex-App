@@ -6,14 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pokedex_try.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>Pokedex</title>
 </head>
 <body>
-    <div class="header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png">
-    <h1>PokeDex</h1>
+    
+      <nav class="navbar navbar-expand-lg ">
+        <div class="navbar-brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots mobile-nav-toggle"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark h2" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark h2" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark h2" href="#pokedex">Pokedex</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid poke_page" id="home">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+                <div class="row-md-8">
+                    <div class="col-md-12">
+                        <h1 class="row">The Ultimate <div class="shine"> Pokedex </div> App</h1>
+                    </div>
+                </div>
+                <div class="row-md-2">
+                    <div class="col-md-12">
+                        <p class="row">The complete Pokemon World is here! Checkout it out here!</p>
+                    </div>
+                </div>
+                <div class="row-md-2">
+                    <div class="col-md-6 a_div">
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='#pokedex'"">Let's GO!</button>
+                        <button type="button" class="btn btn-light" onclick="window.location.href='#features'">Learn More</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+                <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG107.png">
+            </div>
+        </div>
+    </div>
+
+
+<br>
+
+
+
+
+
+
+<div class="container-fluid features_page" id="features">
+    <div class="row feat">
+    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"><h1>Features of the <div class="shine">Pokedex</div></h1></div>
+    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 div_features">
+        <div class=" div_feature">
+            <h3>Find Pokemons according to their type</h3>
+            <p>The type filter fetches all the pokemons of your selected type and displays you the pokemons of that type from all the generations.</p>
+        </div>
+        <div class=" div_feature">
+            <h3>Get the all the information about the Pokemons</h3>
+            <p>You can see the image of the pokemon, its name and its primary and secondary type in a wholesome attractive way in the form of pokemon card.</p>
+        </div>
+        <div class=" div_feature">
+            <h3>Interact with the Pokemon card to reveal more information</h3>
+            <p>When you interact with the card, some additional information such as its stats and decription about it is revealed.</p>
+        </div>
+    
+    </div>
 </div>
-    <div class="type_container">
+</div>
+<br>
+
+
+
+    <div class="type_container" id="pokedex">
         <form class="form">
             <label for="pok_types">Pokemon Types</label>
             <select id="pok_types" name="pok_types" data-dropdown>
@@ -44,9 +124,20 @@
 
  <div class="poke_container"></div>  
 
-    <script src="pokedex_try.js">
+    <script src="pokedex_try.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    </script>
+<div class="footer">
+    <hr>
+    <p>Copyright Ⓒ 2022 Pokedex App by Fahim. All Rights Reserved.</p>
+    <div class="social">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
 
+</div>
 </body>
 </html>
