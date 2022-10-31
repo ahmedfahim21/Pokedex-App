@@ -153,7 +153,7 @@ async function createPokemonCard(pokemon){
 
 //function to fetch pokemons based on type filtering
 var pok_types=document.getElementById('pok_types');
-pok_types.addEventListener('click', async function(){
+pok_types.addEventListener('change', async function(){
     poke_container[0].innerHTML="";
     var type_id= pok_types.value;
     if(type_id=="0"){
