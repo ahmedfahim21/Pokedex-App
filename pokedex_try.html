@@ -12,7 +12,7 @@
 </head>
 <body>
     
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div class="navbar-brand">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png">
           </div>
@@ -50,9 +50,11 @@
                 </div>
                 <div class="row-md-2">
                     <div class="col-md-6 a_div">
-                        <button type="button" class="btn btn-primary" onclick="window.location.href='#pokedex'"">Let's GO!</button>
-                        <button type="button" class="btn btn-light" onclick="window.location.href='#features'">Learn More</button>
+                        <div class="row">
+                        <div class=" col-xg-6"><button type="button" class="custbut1" onclick="window.location.href='#pokedex'"">Let's GO!</button></div>
+                        <div class=" col-xg-6"><button type="button" class="custbut2" onclick="window.location.href='#features'">Learn More</button></div>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
@@ -71,8 +73,8 @@
 
 <div class="container-fluid features_page" id="features">
     <div class="row feat">
-    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"><h1>Features of the <div class="shine">Pokedex</div></h1></div>
-    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 div_features">
+    <div class="col-md-5 "><h1>Features of the <div class="shine">Pokedex</div></h1></div>
+    <div class="col-md-7 row-xs-12 div_features">
         <div class=" div_feature">
             <h3>Find Pokemons according to their type</h3>
             <p>The type filter fetches all the pokemons of your selected type and displays you the pokemons of that type from all the generations.</p>
@@ -93,7 +95,7 @@
 
 
 
-    <div class="type_container" id="pokedex">
+    <div class="type_container col-sm-12" id="pokedex">
         <form class="form">
             <label for="pok_types">Pokemon Types</label>
             <select id="pok_types" name="pok_types" data-dropdown>

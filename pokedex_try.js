@@ -136,11 +136,11 @@ async function createPokemonCard(pokemon){
     `;
 
     //event listeners to toggle front and back side
-    pokemonEl.addEventListener('mouseenter', ()=>{
+    pokemonEl.addEventListener('mouseenter touchenter', ()=>{
         pokemonEl.style.backgroundColor=color;
         pokemonEl.innerHTML=pokeInnerHTML2;
     })
-    pokemonEl.addEventListener('mouseleave', ()=>{
+    pokemonEl.addEventListener('mouseleave touchleave', ()=>{
         pokemonEl.style.backgroundColor="rgba(255, 255, 255, .5)";
         pokemonEl.innerHTML=pokeInnerHTML;
         pokemonEl.style.borderColor=colors[type];
