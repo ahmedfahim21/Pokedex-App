@@ -23,7 +23,6 @@ body {
 	font-family: 'Lato';
 	margin: 0;
   padding-left: 90px;
-  /* padding-right: 60px; */
 }
 
 @media (max-width: 978px) {
@@ -43,7 +42,6 @@ body {
   }
 
 }
-
 
 .navbar img{
   width: 70px;
@@ -140,15 +138,12 @@ body {
 }
 
 .features_page .div_features .div_feature h3{
-  /* padding-top: 20px;
-  margin-left: 15px; */
   font-size: 25px;
 
 }
 
 .features_page .div_features .div_feature p{
-  /* padding-top: 10px;
-  margin-left: 15px; */
+
   font-size: 18px;
   font-weight: 200;
 
@@ -163,14 +158,9 @@ body {
 
 
 .type_container {
-    /* position: relative; */
-    /* padding-left: 20px; */
     align-content: space-between;
     justify-content: center;
     margin-top: 220px;
-    /* display: flex;
-    flex-wrap: wrap;
-    top: 200px; */
     
   }
   
@@ -187,27 +177,7 @@ body {
     outline: none;
   }
   
-  .type_container::before {
-    content: "\f13a";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5%;
-    height: 100%;
-    text-align: center;
-    font-size: 28px;
-    line-height: 45px;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.1);
-    pointer-events: none;
-  }
-  
-  .type_container:hover::before {
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
+
   .type_container select option {
     padding: 30px;
   }
@@ -216,19 +186,6 @@ body {
     font-size: 30px;
     padding-right: 10px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
   .poke_container{
@@ -321,9 +278,40 @@ body {
     position: relative;
 }
 
-.footer{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  bottom: -500px;
+
+
+footer{
+    text-align: center;
+    padding-top: 90px;
+    margin-top: auto;
+    width: 100vh;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: rgba(255, 255, 255, 0.6);
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%) ;
+    transition: 0.5s;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #52527a;
+    transition: 0.5s;
+    text-decoration: none;
 }
