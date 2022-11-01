@@ -147,7 +147,11 @@ async function createPokemonCard(pokemon){
         pokemonEl.innerHTML=pokeInnerHTML;
         pokemonEl.style.borderColor=colors[type];
     })
-    
+    pokemonEl.addEventListener('touchmove', ()=>{
+        pokemonEl.style.backgroundColor="rgba(255, 255, 255, .5)";
+        pokemonEl.innerHTML=pokeInnerHTML;
+        pokemonEl.style.borderColor=colors[type];
+    })
     poke_container[0].appendChild(pokemonEl);
 
 }
