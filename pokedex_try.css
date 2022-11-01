@@ -287,7 +287,6 @@ footer{
     text-align: center;
     padding-top: 90px;
     margin-top: auto;
-    width: 100vh;
 }
 
 footer li{
@@ -296,7 +295,11 @@ footer li{
     display: inline-block;
 }
 
-.icons a{
+footer ul{
+  padding-inline-start: 0px;
+}
+
+.myicons a{
     background: rgba(255, 255, 255, 0.6);
     color: #272727;
     padding: 14px;
@@ -304,16 +307,16 @@ footer li{
     border-radius: 100%;
     display: flex;
 }
-.icons a:hover{
+.myicons a:hover{
     color: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%) ;
     transition: 0.5s;
 }
 
-.menu a{
+.mymenu a{
     color: #ffffff;
     text-decoration: none;
 }
-.menu a:hover{
+.mymenu a:hover{
     color: #52527a;
     transition: 0.5s;
     text-decoration: none;
@@ -322,7 +325,8 @@ footer li{
 
 .pokcov img{
   width: clamp(8rem, 1.9rem + 6.15vw, 13rem);
-  padding-left: 30px;
+  padding-left: 20px;
+  padding-right: 5px;
   margin-top: 10px;
 }
 
@@ -344,8 +348,8 @@ img.vert-move {
 }
 
 .pokcov h1{
-  font-size: clamp(2.8rem, -0.875rem + 8.333vw, 4.6rem);
-  padding-left: 40px;
+  font-size: clamp(2.8rem, -0.875rem + 8.333vw, 4.5rem);
+  padding-left: 20px;
 }
 
 .pokdes{
