@@ -10,12 +10,12 @@ const colors = {
 	fairy: '#FF70A6',
 	poison: '#8C5383',
 	bug: '#BCED09',
-	dragon: '#473776',
+	dragon: '#145c9e',
 	psychic: '#D138BF',
 	flying: '#8789C0',
 	fighting: '#FF1F57',
 	normal: '#7C9082',
-    dark: '#2f4858',
+    dark: '#0b516f',
     ghost: '#673582',
     ice:'#70D6FF',
     steel:'#B8CAE0'
@@ -59,7 +59,9 @@ async function createPokemonCard(pokemon){
 
     pokemonEl.innerHTML = pokeInnerHTML;
     const color =colors[type];
+    
     pokemonEl.style.borderColor=color;
+
 
     if(pokemon.id<10000){
     const url_sp= 'https://pokeapi.co/api/v2/pokemon-species/'+pokemon.id;
@@ -136,11 +138,11 @@ async function createPokemonCard(pokemon){
     `;
 
     //event listeners to toggle front and back side
-    pokemonEl.addEventListener('mouseover', ()=>{
+    pokemonEl.addEventListener('click', ()=>{
         pokemonEl.style.backgroundColor=color;
         pokemonEl.innerHTML=pokeInnerHTML2;
     })
-    pokemonEl.addEventListener('mouseout', ()=>{
+    pokemonEl.addEventListener('mousemove', ()=>{
         pokemonEl.style.backgroundColor="rgba(255, 255, 255, .5)";
         pokemonEl.innerHTML=pokeInnerHTML;
         pokemonEl.style.borderColor=colors[type];

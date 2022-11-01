@@ -3,9 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    overflow-x:hidden;
+    
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,6 +43,10 @@ body {
     margin-bottom:0;
   }
 
+  .pokcov img{
+    width: 30%;
+  }
+
 }
 
 .navbar img{
@@ -54,7 +60,7 @@ body {
 
 .poke_page h1{
   margin-top: 150px;
-  font-size: 95px;
+  font-size: clamp(3rem, 1.84rem + 6.15vw, 8rem);
 }
 
 .custbut1{
@@ -121,7 +127,7 @@ body {
 }
 
 .features_page h1{
-  font-size: 80px;
+  font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
 }
 
 .features_page .div_features{
@@ -155,12 +161,10 @@ body {
 }
 
 
-
-
 .type_container {
     align-content: space-between;
     justify-content: center;
-    margin-top: 220px;
+    margin-top: 100px;
     
   }
   
@@ -188,6 +192,7 @@ body {
   }
 
   
+
   .poke_container{
     
     padding-top: 90px;
@@ -198,7 +203,6 @@ body {
     justify-content: center;
     max-width: 1200px;
 }
-
 
 .pokemon {
     
@@ -213,6 +217,7 @@ body {
 	text-align: center;
     width: 280px;
     height: 380px;
+    overflow: hidden;
 }
 
 .pokemon .img_container {
@@ -278,8 +283,6 @@ body {
     position: relative;
 }
 
-
-
 footer{
     text-align: center;
     padding-top: 90px;
@@ -314,4 +317,46 @@ footer li{
     color: #52527a;
     transition: 0.5s;
     text-decoration: none;
+}
+
+
+.pokcov img{
+  width: clamp(8rem, 1.9rem + 6.15vw, 13rem);
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.pokcov h1{
+  font-size: clamp(2.8rem, -0.875rem + 8.333vw, 4.6rem);
+  padding-left: 40px;
+}
+
+.pokdes{
+  padding-top: 70px;
+}
+
+.pokdes h1{
+  font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4.1rem);
+}
+
+.pokdes p{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }

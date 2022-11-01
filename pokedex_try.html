@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Pokedex</title>
+    <title>Pokédex</title>
 </head>
 <body>
     
@@ -28,7 +28,7 @@
               <a class="nav-link text-dark h2" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark h2" href="#pokedex">Pokedex</a>
+              <a class="nav-link text-dark h2" href="#pokedex">Pokédex</a>
             </li>
           </ul>
         </div>
@@ -40,12 +40,12 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
                 <div class="row-md-8">
                     <div class="col-md-12">
-                        <h1 class="row">The Ultimate <div class="shine"> Pokedex </div> App</h1>
+                        <h1 class="row">The Ultimate <div class="shine"> Pokédex </div> App</h1>
                     </div>
                 </div>
                 <div class="row-md-2">
                     <div class="col-md-12">
-                        <p class="row">The complete Pokemon World is here! Checkout it out here!</p>
+                        <p class="row">The complete Pokémon World is here! Checkout it out now!</p>
                     </div>
                 </div>
                 <div class="row-md-2">
@@ -63,29 +63,23 @@
         </div>
     </div>
 
-
 <br>
-
-
-
-
-
 
 <div class="container-fluid features_page" id="features">
     <div class="row feat">
-    <div class="col-md-5 "><h1>Features of the <div class="shine">Pokedex</div></h1></div>
+    <div class="col-md-5 "><h1>Features of the <div class="shine">Pokédex</div></h1></div>
     <div class="col-md-7 row-xs-12 div_features">
         <div class=" div_feature">
-            <h3>Find Pokemons according to their type</h3>
-            <p>The type filter fetches all the pokemons of your selected type and displays you the pokemons of that type from all the generations.</p>
+            <h3>Find Pokémons according to their type</h3>
+            <p>The type filter fetches all the pokémons of your selected type and displays you the pokémons of that type from all the generations.</p>
         </div>
         <div class=" div_feature">
-            <h3>Get the all the information about the Pokemons</h3>
-            <p>You can see the image of the pokemon, its name and its primary and secondary type in a wholesome attractive way in the form of pokemon card.</p>
+            <h3>Get the all the information about the Pokémons</h3>
+            <p>You can see the image of the pokémon, its name and its primary and secondary type in a wholesome attractive way in the form of pokémon card.</p>
         </div>
         <div class=" div_feature">
-            <h3>Interact with the Pokemon card to reveal more information</h3>
-            <p>When you interact with the card, some additional information such as its stats and decription about it is revealed.</p>
+            <h3>Interact with the Pokémon Card to reveal more information</h3>
+            <p>When you interact with the card, some additional information such as its stats like hp, speed, attack, defense, etc. and decription about the pokémon is revealed.</p>
         </div>
     
     </div>
@@ -93,11 +87,25 @@
 </div>
 <br>
 
+    <div class="row" style="margin-top: 200px;"  id="pokedex">
+        <div class="pokcov col-md-4">
+            <img class="vert-move" src="https://www.freepnglogos.com/uploads/pokemon-go-png-logo/pokemon-go-mewtwo-generator-png-logo-18.png">
+        </div>
+        <div class="pokcov col-md-8">
+            <h1><div class="shine">Pokédex</div> App</h1>
+        </div>
+    </div>
 
+    <div class="pokdes col-sm-8">
+        <h1 class="shine">About Pokémon Stats</h1>
+        <p>Every Pokémon creature has an array of stats. <b>HP</b> (Hit Points) is a Pokémon's life force. If your Pokémon's HP hits zero, it faints and is no longer usable in battle (it can still use Hidden Machines, though). The <b>Speed</b> stat decides which Pokémon will make the first move in battle. This stat can be critical in long battles.</p>
+        <p><b>Attack</b> and <b>Special Attack</b> measure the strength of moves used by your Pokémon; the higher this is, the more damage you will do to opponents. Attack corresponds to moves in the Physical category, while Special Attack corresponds to Special moves</p>
+        <p>Similarly, <b>Defense</b> and <b>Special Defense</b> measure the ability to take attacks from other Pokémon; the higher the stat is, the fewer Hit Points will be lost when attacked. Defense corresponds to moves in the Physical category, while Special Defense corresponds to Special moves.</p>
+    </div>
 
-    <div class="type_container col-sm-4" id="pokedex">
+    <div class="type_container col-sm-4">
         <form class="form">
-            <label for="pok_types">Pokemon Types</label>
+            <label for="pok_types">Search Pokémon according to Types</label>
             <select id="pok_types" name="pok_types" data-dropdown>
                 <option value="">--None-- </option>
                 <option value="0">ALL </option>
@@ -131,7 +139,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
-    <footer class="">
+    <footer class="col-12">
         <ul class="icons">
             <li><a href="http://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
             <li><a href="http://linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
@@ -141,7 +149,7 @@
         <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#pokedex">Pokedex</a></li>
+                <li><a href="#pokedex">Pokédex</a></li>
         </ul>
     </footer>
 
