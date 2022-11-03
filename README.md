@@ -31,6 +31,14 @@ git clone https://github.com/ahmedfahim21/Pokedex-App
 
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
+<h2>Implemented Features</h2>
+<ul>
+    <li>Fetching data from the API</li>
+    <li>Filtering data using path parameters</li>
+    <li>Displaying the JSON data in a presentable manner</li>
+    <li>Responsiveness of the webpage</li>
+</ul>
+
 ## Tech Stack
 
 <li>Frameworks</li>
